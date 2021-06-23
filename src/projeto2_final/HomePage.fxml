@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto2_final.HomePageController">
+   <children>
+      <Pane layoutY="125.0" prefHeight="475.0" prefWidth="1100.0" style="-fx-background-color: #F1E7DA;" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+         <children>
+            <Pane prefHeight="475.0" prefWidth="686.0">
+               <children>
+                  <ImageView fitHeight="575.0" fitWidth="687.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../Media/imageMain.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="688.0" layoutY="-2.0" prefHeight="575.0" prefWidth="413.0">
+               <children>
+                  <ImageView fitHeight="132.0" fitWidth="182.0" layoutX="115.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="17.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O FisioGYM começou com a sua atividade&#10; em 1988, e depois deste tempo todo continua &#10;a estar no topo da indústria do Fitness.&#10;Visita-nos e vais encontrar um ambiente fabuloso,&#10; umas excelentes boas vindas, aulas divertidas,&#10; apoio, motivação e um excelente acompanhamento.">
+                     <font>
+                        <Font size="16.5" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="415.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mas, nada disto seria possível sem pessoas como tu." textAlignment="CENTER" wrappingWidth="362.6708984375">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane prefHeight="125.0" prefWidth="1100.0" style="-fx-background-color: #264653;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="butt" fill="#eeb623" layoutX="40.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FisioGYM">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="43.0" layoutX="996.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Media/lock.gif" />
+               </image>
+            </ImageView>
+            <Button layoutX="882.0" layoutY="29.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #264653;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="600.0" prefHeight="100.0" prefWidth="1100.0" style="-fx-background-color: #264653;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="104.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ligue para nós ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="439.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localização">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="859.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="40.0" fitWidth="33.0" layoutX="818.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Media/24-hours.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="59.0" layoutX="399.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Media/placeholder.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="56.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Media/telephone.png" />
+               </image>
+            </ImageView>
+            <Text fill="#d7d7d7" layoutX="104.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(+351) 912076399" />
+            <Text fill="#d7d7d7" layoutX="419.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rua das Flores, Viana do Castelo" />
+            <Text fill="#d7d7d7" layoutX="845.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Segunda-Sexta  8h-19h" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

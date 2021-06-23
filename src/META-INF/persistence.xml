@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Projeto2_FinalPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DAL.Tipomarcacao</class>
+    <class>DAL.Horario</class>
+    <class>DAL.Aula</class>
+    <class>DAL.Funcionario</class>
+    <class>DAL.Marcacao</class>
+    <class>DAL.Pagamento</class>
+    <class>DAL.Cliente</class>
+    <class>DAL.Avaliacao</class>
+    <class>DAL.Dia</class>
+    <class>DAL.Plano</class>
+    <class>DAL.ClienteAula</class>
+    <class>DAL.Tipopagamento</class>
+    <class>DAL.Tipofuncionario</class>
+    <class>DAL.Mes</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
+      <property name="javax.persistence.jdbc.user" value="projeto2"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="913575155"/>
+    </properties>
+  </persistence-unit>
+</persistence>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto2_final.VisualizarConsultaController">
+    <children>
+      <Pane layoutY="125.0" prefHeight="675.0" prefWidth="1100.0" style="-fx-background-color: #F1E7DA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+         <children>
+            <Text layoutX="475.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avaliação">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Pane layoutX="117.0" layoutY="107.0" prefHeight="480.0" prefWidth="866.0" style="-fx-border-color: #000;">
+               <children>
+                  <Text layoutX="39.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cliente:" />
+                  <Text layoutX="39.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo:" />
+                  <TextField fx:id="avaliacaoSexo" editable="false" layoutX="144.0" layoutY="104.0" prefHeight="31.0" prefWidth="240.0" />
+                  <Text fx:id="criarVazio" layoutX="323.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="209.4433568418026" />
+                  <TextField fx:id="avaliacaoNome" editable="false" layoutX="143.0" layoutY="43.0" prefHeight="31.0" prefWidth="240.0" />
+                  <Text layoutX="39.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peso:" />
+                  <TextField fx:id="avaliacaoPeso" editable="false" layoutX="144.0" layoutY="167.0" prefHeight="31.0" prefWidth="240.0" />
+                  <Text layoutX="493.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altura:" />
+                  <TextField fx:id="avaliacaoAltura" editable="false" layoutX="598.0" layoutY="104.0" prefHeight="31.0" prefWidth="240.0" />
+                  <Text layoutX="39.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dobra cutanea triceps:" wrappingWidth="102.42529296875" />
+                  <Text layoutX="493.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dobra cutanea biceps:" wrappingWidth="102.42528915405273" />
+                  <Text layoutX="38.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dobra cutanea coxa:" wrappingWidth="102.42528915405273" />
+                  <Text layoutX="493.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dobra cutanea abdomen:" wrappingWidth="102.42528095841408" />
+                  <Text layoutX="38.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perimetro braço:" wrappingWidth="92.6875" />
+                  <Text layoutX="493.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perimetro cintura:" wrappingWidth="68.7734375" />
+                  <TextField fx:id="avaliacaoTriceps" editable="false" layoutX="144.0" layoutY="234.0" prefHeight="31.0" prefWidth="240.0" />
+                  <TextField fx:id="avaliacaoBiceps" editable="false" layoutX="598.0" layoutY="166.0" prefHeight="31.0" prefWidth="240.0" />
+                  <TextField fx:id="avaliacaoCoxa" editable="false" layoutX="144.0" layoutY="302.0" prefHeight="31.0" prefWidth="240.0" />
+                  <TextField fx:id="avaliacaoAbdomen" editable="false" layoutX="598.0" layoutY="236.0" prefHeight="31.0" prefWidth="240.0" />
+                  <TextField fx:id="avaliacaoBraco" editable="false" layoutX="144.0" layoutY="362.0" prefHeight="31.0" prefWidth="240.0" />
+                  <TextField fx:id="avaliacaoCintura" editable="false" layoutX="598.0" layoutY="302.0" prefHeight="31.0" prefWidth="240.0" />
+                  <Text layoutX="493.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+                  <TextField fx:id="avaliacaoEmail" editable="false" layoutX="598.0" layoutY="43.0" prefHeight="31.0" prefWidth="240.0" />
+                  <Text layoutX="493.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Perimetro perna:" wrappingWidth="92.6875" />
+                  <TextField fx:id="avaliacaoPerna" editable="false" layoutX="598.0" layoutY="361.0" prefHeight="31.0" prefWidth="240.0" />
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane prefHeight="125.0" prefWidth="1100.0" style="-fx-background-color: #264653;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+           <Button layoutX="25.0" layoutY="9.0" mnemonicParsing="false" onAction="#voltarMenu" style="-fx-background-color: #264653;" text="FisioGYM" textFill="#eeb623">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            
+             <Button layoutX="830.0" layoutY="74.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #c91212;" text="Terminar Sessão" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="nomeUtilizador" fill="WHITE" layoutX="966.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="825.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEM-VINDO">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

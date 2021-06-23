@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto2_final.ConsultarPagamentosClienteController">
+    <children>
+      <Pane layoutY="125.0" prefHeight="579.0" prefWidth="1100.0" style="-fx-background-color: #F1E7DA;" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+         <children>
+            <TableView fx:id="tablePagamentos" layoutX="254.0" layoutY="118.0" prefHeight="428.0" prefWidth="593.0">
+              <columns>
+                <TableColumn fx:id="col_mes" prefWidth="203.0" text="Mes" />
+                  <TableColumn fx:id="col_preco" prefWidth="136.0" text="Preço" />
+                  <TableColumn fx:id="col_metodo" minWidth="1.0" prefWidth="250.0" text="Metodo" />
+              </columns>
+            </TableView>
+            <Text layoutX="403.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meus pagamentos">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="criarVazio" fill="#f81010" layoutX="794.0" layoutY="655.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="203.0000103712082" />
+            <Button layoutX="495.0" layoutY="569.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="48.0" prefWidth="151.0" style="-fx-background-color: #264653;" text="Voltar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="125.0" prefWidth="1100.0" style="-fx-background-color: #264653;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            
+             <Button layoutX="830.0" layoutY="74.0" mnemonicParsing="false" onAction="#close" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #c91212;" text="Terminar Sessão" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="userNome" fill="WHITE" layoutX="966.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="825.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEM-VINDO">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+            <Button layoutX="25.0" layoutY="9.0" mnemonicParsing="false" onAction="#voltarMenu" style="-fx-background-color: #264653;" text="FisioGYM" textFill="#eeb623">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

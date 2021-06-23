@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto2_final.EscolherLoginController">
+    <children>
+      <Pane layoutY="125.0" prefHeight="575.0" prefWidth="1100.0" style="-fx-background-color: #F1E7DA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+         <children>
+            <Text fx:id="emailVazio" fill="#f81010" layoutX="720.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="188.6708984375">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="passwordVazio" fill="#f81010" layoutX="720.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="188.6708984375">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fx:id="loginErrado" fill="#f81010" layoutX="720.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="188.6708984375">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Pane layoutX="174.0" layoutY="161.0" prefHeight="290.0" prefWidth="290.0" style="-fx-border-color: #000; -fx-border-width: 2;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="70.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/avatar.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="62.0" layoutY="217.0" mnemonicParsing="false" onAction="#loginCliente" style="-fx-background-color: #eeb623; -fx-background-radius: 15;" text="Area para clientes">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane layoutX="649.0" layoutY="161.0" prefHeight="290.0" prefWidth="290.0" style="-fx-border-color: #000; -fx-border-width: 2;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="70.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/unauthorized-person.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="13.0" layoutY="219.0" mnemonicParsing="false" onAction="#loginFuncionario" style="-fx-background-color: eeb623; -fx-background-radius: 15;" text="Area para pessoas autorizadas">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane disable="true" prefHeight="125.0" prefWidth="1100.0" style="-fx-background-color: #264653;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#eeb623" layoutX="40.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FisioGYM">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

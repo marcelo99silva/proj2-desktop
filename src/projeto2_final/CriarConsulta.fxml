@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto2_final.CriarConsultaController">
+    <children>
+      <Pane layoutY="125.0" prefHeight="675.0" prefWidth="1100.0" style="-fx-background-color: #F1E7DA;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+         <children>
+            <Text layoutX="331.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fazer marcação de consulta">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Pane fx:id="consultaHora" layoutX="117.0" layoutY="116.0" prefHeight="445.0" prefWidth="866.0" style="-fx-border-color: #000;">
+               <children>
+                  <Text layoutX="39.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data:">
+                     <font>
+                        <Font size="14.5" />
+                     </font>
+                  </Text>
+                  <Text layoutX="39.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funcionario:" />
+                  <DatePicker fx:id="consultaData" layoutX="138.0" layoutY="66.0" onAction="#tabelaHorarios" prefHeight="31.0" prefWidth="240.0" />
+                  <Button layoutX="323.0" layoutY="350.0" mnemonicParsing="false" onAction="#marcarConsulta" prefHeight="38.0" prefWidth="221.0" style="-fx-background-color: #264653;" text="Marcar" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Text fx:id="criarVazio" layoutX="329.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="209.443359375" />
+                  <Text layoutX="39.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horario:" />
+                  <TableView fx:id="consultaTabela" layoutX="455.0" layoutY="60.0" prefHeight="216.0" prefWidth="370.0">
+                    <columns>
+                      <TableColumn fx:id="col_funcionario" prefWidth="126.0" text="Funcionario" />
+                      <TableColumn fx:id="col_data" prefWidth="121.0" text="Data" />
+                        <TableColumn fx:id="col_hora" prefWidth="122.0" text="Hora" />
+                    </columns>
+                  </TableView>
+                  <JFXComboBox fx:id="consultaFuncionario" layoutX="138.0" layoutY="143.0" onAction="#tabelaHorarios" prefHeight="31.0" prefWidth="240.0" />
+                  <Text fx:id="dataVazia" fill="#f81010" layoutX="138.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="195.6708984375" />
+                  <JFXComboBox fx:id="consultaHorario" layoutX="138.0" layoutY="241.0" onAction="#escolherHorario" prefHeight="31.0" prefWidth="240.0" />
+                  <Text layoutX="559.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horários preenchidos">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="horarioCheio" fill="#f81010" layoutX="138.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="195.6708984375" />
+               </children>
+            </Pane>
+         </children></Pane>
+      <Pane prefHeight="125.0" prefWidth="1100.0" style="-fx-background-color: #264653;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+           <Button layoutX="25.0" layoutY="9.0" mnemonicParsing="false" onAction="#voltarMenu" style="-fx-background-color: #264653;" text="FisioGYM" textFill="#eeb623">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            
+             <Button layoutX="830.0" layoutY="74.0" mnemonicParsing="false" onAction="#close" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #c91212;" text="Terminar Sessão" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="userNome" fill="WHITE" layoutX="966.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="825.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEM-VINDO">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

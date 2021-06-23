@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto2_final.MenuAdminController">
+    <children>
+      <Pane layoutY="125.0" prefHeight="678.0" prefWidth="1100.0" style="-fx-background-color: #F1E7DA;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+         <children>
+            <Pane layoutX="153.0" layoutY="53.0" prefHeight="165.0" prefWidth="310.0" style="-fx-border-color: #000;">
+               <children>
+                  <Button fx:id="consultarCliente" layoutX="100.0" layoutY="115.0" mnemonicParsing="false" onAction="#consultClientes" style="-fx-background-color: #264653;" text="Consultar Clientes" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <ImageView fitHeight="100.0" fitWidth="85.0" layoutX="113.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/avatar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="153.0" layoutY="266.0" prefHeight="165.0" prefWidth="310.0" style="-fx-border-color: #000;">
+               <children>
+                  <Button fx:id="consultarFuncionario" layoutX="87.0" layoutY="116.0" mnemonicParsing="false" onAction="#consultFuncionarios" style="-fx-background-color: #264653;" text="Consultar Funcionários" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <ImageView fitHeight="100.0" fitWidth="85.0" layoutX="113.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/employee.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="153.0" layoutY="476.0" prefHeight="165.0" prefWidth="310.0" style="-fx-border-color: #000;">
+               <children>
+                  <Button fx:id="consultarAdmin" layoutX="104.0" layoutY="116.0" mnemonicParsing="false" onAction="#consultAdmins" style="-fx-background-color: #264653;" text="Consultar Admins" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <ImageView fitHeight="100.0" fitWidth="85.0" layoutX="116.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/unauthorized-person.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="643.0" layoutY="476.0" prefHeight="165.0" prefWidth="310.0" style="-fx-border-color: #000;">
+               <children>
+                  <Button fx:id="consultarHorarios" layoutX="66.0" layoutY="114.0" mnemonicParsing="false" onAction="#consultHorarioFuncionario" style="-fx-background-color: #264653;" text="Consultar horarios de trabalho" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <ImageView fitHeight="100.0" fitWidth="90.0" layoutX="110.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/calendar.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="643.0" layoutY="265.0" prefHeight="165.0" prefWidth="310.0" style="-fx-border-color: #000;">
+               <children>
+                  <Button fx:id="consultarPagamentos" layoutX="41.0" layoutY="115.0" mnemonicParsing="false" onAction="#efetuarPagamentoCliente" style="-fx-background-color: #264653;" text="Consultar Pagamentos de mensalidades" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <ImageView fitHeight="100.0" fitWidth="90.0" layoutX="110.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/credit-card.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="643.0" layoutY="53.0" prefHeight="165.0" prefWidth="310.0" style="-fx-border-color: #000;">
+               <children>
+                  <Button fx:id="consultarAulasGrupo" layoutX="81.0" layoutY="115.0" mnemonicParsing="false" onAction="#consultAulas" style="-fx-background-color: #264653;" text="Consultar aulas de grupo" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <ImageView fitHeight="100.0" fitWidth="90.0" layoutX="110.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Media/dumbbell.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane prefHeight="125.0" prefWidth="1100.0" style="-fx-background-color: #264653;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#eeb623" layoutX="40.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FisioGYM">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Text>
+            
+             <Button layoutX="830.0" layoutY="74.0" mnemonicParsing="false" onAction="#close" prefHeight="38.0" prefWidth="161.0" style="-fx-background-color: #c91212;" text="Terminar Sessão" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Text fx:id="nomeUtilizador" fill="WHITE" layoutX="966.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="admin">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="825.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BEM-VINDO">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+         </children>
+      </Pane>
+      
+   </children>
+</AnchorPane>
